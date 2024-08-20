@@ -1,0 +1,17 @@
+@use '../globalStyles/abstract/variables' as *;
+
+.details {
+  background-color: var(--color-grey-light-1);
+  display: flex;
+  padding: 4.5rem;
+  font-size: 1.4rem;
+  border-bottom: var(--line);
+
+  @media only screen and (max-width: $bpMedium) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: $bpSmall) {
+    flex-direction: column;
+  }
+}

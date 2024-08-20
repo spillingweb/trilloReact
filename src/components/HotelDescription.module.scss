@@ -1,0 +1,58 @@
+@use '../globalStyles/abstract/variables' as *;
+
+.description {
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+
+  @media only screen and (max-width: $bpMedium) {
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bpSmall) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+.paragraph {
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recommendations {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+
+  display: flex;
+  align-items: center;
+}
+
+.recommendCount {
+  margin-right: auto;
+}
+
+.recommendFriends {
+  display: flex;
+}
+
+.recommendPhoto {
+  box-sizing: content-box;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+
+  &:not(:last-child) {
+    margin-right: -2rem;
+  }
+}

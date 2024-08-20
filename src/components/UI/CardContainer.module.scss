@@ -1,0 +1,19 @@
+@use "../../globalStyles/abstract/variables" as *;
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+
+  @media only screen and (max-width: $bpMedium) {
+    padding: 2rem;
+  }
+}
+
+.review {
+  margin-bottom: 3.5rem;
+
+  @media only screen and (max-width: $bpMedium) {
+    margin-bottom: 3rem;
+  }
+}
